@@ -13,7 +13,7 @@ public class SearchTests {
         open("https://www.google.com/");
 
         //Принять куки
-        $("[id=L2AGLb]").pressEnter();
+     //   $("[id=L2AGLb]").pressEnter();
 
         //Ввести в поиск selenide
         $("[name=q]").setValue("selenide").pressEnter();
