@@ -12,8 +12,10 @@ public class SearchTests {
         //Открыть хром
         open("https://www.google.com/");
 
-        //Принять куки
-     //   $("[id=L2AGLb]").pressEnter();
+        // Принять куки, если они есть
+        if ($("[id=L2AGLb]").exists()) {
+            $("[id=L2AGLb]").pressEnter();
+        }
 
         //Ввести в поиск selenide
         $("[name=q]").setValue("selenide").pressEnter();
